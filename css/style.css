@@ -2,6 +2,8 @@
 @import url(normalize.min.css);
 @import url(reset.css);
 
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&display=swap");
+
 /* *********************************** */
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
@@ -16,4 +18,68 @@
 
 /* Colores */
 
-/* ******************************** */
+html {
+  font-family: "Joti One", serif;
+}
+
+body {
+  background: url(../svg/Union.svg);
+  background-color: #e99c2b;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-content: center;
+}
+
+.layout {
+  width: 1200px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  .titulo {
+    color: #e99c2b;
+    text-align: center;
+    h1,
+    h2 {
+      font-size: 68px;
+    }
+
+    h4 {
+      font-size: 22px;
+      color: #bababa;
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 20px;
+      text-align: center;
+      border: 20px solid transparent;
+    }
+  }
+}
+/* ---------------------------------------- */
+#calendario {
+  background: linear-gradient(180deg, #8a181a 0%, #540404 100%);
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  place-content: center;
+
+  .calendario {
+    width: 1200px;
+    height: 768px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
