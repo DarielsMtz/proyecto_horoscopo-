@@ -125,3 +125,8 @@ body {
     }
   }
 }
+
+#figura {
+  background: url(../svg/Bordes.svg) center,
+    linear-gradient(180deg, #8a181a 0%, #540404 100%);
+}
